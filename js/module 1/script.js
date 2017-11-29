@@ -1,6 +1,6 @@
-const string1 = "qwertyuiop"; console.log("first string: " + string1);
-const string2 = "asdfghjkl"; console.log("second string: " + string2);
-const string3 = "zxcvbnm"; console.log("third string: " + string3);
+const string1 = "qwertyuiop[]\\"; console.log("first string: " + string1);
+const string2 = "asdfghjkl;'"; console.log("second string: " + string2);
+const string3 = "zxcvbnm,./"; console.log("third string: " + string3);
 
 const string1Length = string1.length; console.log("first string length: " + string1Length);
 
@@ -19,8 +19,15 @@ let string2LastChar = string2.charAt(string2Length - 1); console.log("last char 
 let string3FirstChar = string3.charAt(0); console.log("first char from third string: " + string3FirstChar);
 let string3LastChar = string3.charAt(string3Length - 1); console.log("last char from third string: " + string3LastChar);
 
-let charToFind = 'b';
+let char1ToFind = '[';
+let char2ToFind = ']';
 
-let charIndexInString1 = string1.indexOf(charToFind); console.log("index of char \"" + charToFind + "\" first string : "+ charIndexInString1);
-let charIndexInString2 = string2.indexOf(charToFind); console.log("index of char \"" + charToFind + "\" second string : "+ charIndexInString2);
-let charIndexInString3 = string3.indexOf(charToFind); console.log("index of char \"" + charToFind + "\" third string : "+ charIndexInString3);
+let char1IndexInString1 = string1.indexOf(char1ToFind); console.log("index of char \"" + char1ToFind + "\" first string : "+ char1IndexInString1);
+let char1IndexInString2 = string2.indexOf(char1ToFind); console.log("index of char \"" + char1ToFind + "\" second string : "+ char1IndexInString2);
+let char1IndexInString3 = string3.indexOf(char1ToFind); console.log("index of char \"" + char1ToFind + "\" third string : "+ char1IndexInString3);
+
+
+
+let char2IndexInString1 = string1.indexOf(char2ToFind); console.log("index of char \"" + char2ToFind + "\" first string : "+ char2IndexInString1);
+let char2IndexInString2 = string2.indexOf(char2ToFind); console.log("index of char \"" + char2ToFind + "\" second string : "+ char2IndexInString2);
+let char2IndexInString3 = string3.indexOf(char2ToFind); console.log("index of char \"" + char2ToFind + "\" third string : "+ char2IndexInString3);
